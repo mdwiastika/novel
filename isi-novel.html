@@ -121,12 +121,6 @@
 
 <body>
     <!-- As a heading -->
-    <button class="btn mt-2 pt-1 px-2 text-white" style="z-index: 99; background-color: rgba(111, 110, 110, 0.7);"
-        type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-controls="collapseExample"
-        id="sayas">
-        <i class="fas fa-list fa-xl"></i>
-    </button>
-
     <div class="accordion collapse" style="z-index: 77;" id="collapseExample">
         <div class="accordion-item bg-dark text-white ou">
             <h2 class="accordion-header" id="headingOne">
@@ -339,15 +333,17 @@
         <div class="haii" style="z-index: 30;">
             <ul style="margin-right:30px;">
                 <li><a href="" id="boxfirst"><i class="fa-solid fa-arrow-left fa-xl" id="icon"></i></a></li>
-                <li style="margin-top: 45px;"><a href="" id="boxfirst"><i class=" fa-solid fa-scroll fa-xl"
-                            id="icon"></i></a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample" id="boxfirst" style="margin-top: 45px;"><i
+                            class="fa-solid fa-scroll fa-xl"></i></a>
+                </li>
                 <li><a href="" id="boxfirst" style="margin-top: 90px;"><i class="fa-solid fa-bookmark fa-xl"
                             id="icon"></i></a></li>
                 <li><a href="" id="boxfirst" style="margin-top: 135px;"><i class="fa-solid fa-share-nodes fa-xl"
                             id="icon"></i></a></li>
-                <li style="z-index: 22;"><a data-bs-toggle="collapse" href="#collapseExample2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample2" id="boxfirst"
-                        style="margin-top: 180px;"><i class="fa-solid fa-gear fa-xl"></i></a>
+                <li><a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                        aria-controls="collapseExample2" id="boxfirst" style="margin-top: 180px;"><i
+                            class="fa-solid fa-gear fa-xl"></i></a>
                 </li>
                 <li><a href="" id="boxfirst" style="margin-top: 225px;"><i class="fa-solid fa-arrow-right fa-sm fa-xl"
                             id="icon"> </i> </a>
