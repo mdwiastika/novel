@@ -22,13 +22,34 @@
             text-decoration: none;
         }
 
+        .minus,
+        .plus {
+            width: 20px;
+            height: 20px;
+            background: #f2f2f2;
+            border-radius: 4px;
+            padding: 8px 5px 8px 5px;
+            border: 1px solid #ddd;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        span {
+            cursor: pointer;
+        }
+
+        .number {
+            margin: 100px;
+        }
+
         @media (max-width: 991.98px) {
             #sayas {
                 position: absolute;
             }
 
             #collapseExample {
-                position: absolute;
+                position: fixed;
                 margin-top: 60px;
             }
 
@@ -87,7 +108,7 @@
             }
 
             #collapseExample {
-                position: absolute;
+                position: fixed;
                 margin-top: 60px;
             }
 
@@ -244,7 +265,8 @@
             </div>
             <h3 style="text-align: center; color: white;">Reaction</h3>
             <h1 style="text-align: center;">
-                <a href="">👍</a> <a href="">❤️</a><a href=""></a> 😂 😨 😭 😍 🤬
+                <a href="">👍</a><a href="">❤️</a><a href="">😂</a><a href="">😨</a><a href="">😭</a><a href="">😍</a><a
+                    href="">🤬</a>
             </h1>
 
         </div>
@@ -269,12 +291,6 @@
                         <option>Arial</option>
                         <option>Helvetica</option>
                         <option>Arial Black</option>
-                        <option>Impact</option>
-                        <option>Lucida Sans Unicode</option>
-                        <option>Tahoma</option>
-                        <option>Verdana</option>
-                        <option>Courier New</option>
-                        <option>Lucida Console</option>
                     </select>
                     <p class="mb-0 mt-3">Font Size</p>
                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -307,17 +323,6 @@
         </div>
 
     </div>
-
-
-
-    <!-- <a href="" id="boxfirst"><i class="fa-solid fa-bookmark fa-xl" id="icon"></i></a>
-            <a href="" id="boxfirst"><i class="fa-solid fa-share-nodes fa-xl" id="icon"></i></a>
-            <a href="" id="boxfirst"><i class="fa-solid fa-gear fa-sm fa-xl" id="icon"></i></a>
-            <a href="" id="boxfirst"><i class="fa-solid fa-arrow-right fa-sm fa-xl" id="icon"> </i> </a> -->
-
-    <!-- <img src="https://c.disquscdn.com/next/current/publisher-admin/assets/img/emoji/upvote-512x512.png"
-                                    alt=""> -->
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -330,11 +335,6 @@
             var listValue = selectTag.options[selectTag.selectedIndex].text;
             document.getElementById("demo").style.fontFamily = listValue;
         }
-        $("#SelFontSize").change(function () {
-            $("#" + styleTarget).css({
-                'font-size': $(this).val()
-            });
-        });
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

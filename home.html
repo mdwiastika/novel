@@ -13,7 +13,7 @@
     <title>Hello, world!</title>
     <style>
         body {
-            background-color: rgba(132, 129, 129, .3)
+            background-color: rgba(44, 96, 192, 0.3)
         }
 
         a {
@@ -21,13 +21,41 @@
         }
 
         .card:hover {
-            transform: scale(1.02);
+            transform: scale(1.008);
+            transition: .3s;
+        }
+
+        .card {
+            background-color: antiquewhite;
+            border-radius: 7px;
+        }
+
+        a {
+            color: black;
+        }
+
+        @media (max-width: 767.98px) {
+            .card {
+                width: 10rem;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .card {
+                width: 10rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .card {
+                width: 17rem;
+            }
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: steelblue;">
         <div class="container">
             <a class="navbar-brand text-white" href="#">NOVELBERA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,7 +85,7 @@
     <div class="container">
         <div class="row row-cols-lg-4 my-3">
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/btth2.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
                         <a href="isi-novel.html">
@@ -75,7 +103,7 @@
                 </div>
             </div>
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/sl.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
                         <a href="isi-novel.html">
@@ -93,7 +121,7 @@
                 </div>
             </div>
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/mm.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
                         <a href="isi-novel.html">
@@ -111,7 +139,7 @@
                 </div>
             </div>
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/btth.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
                         <a href="isi-novel.html">
@@ -129,67 +157,74 @@
                 </div>
             </div>
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/btth2.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">BTTH S2</h5>
-                        <p class="card-text">Chp. 243</p>
-                        <div class="" style="color: yellow;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star" style="color: gray;"></i>
-                        </div>
+                        <a href="isi-novel.html">
+                            <h5 class="card-title">BTTH S2</h5>
+                            <p class="card-text">Chp. 243</p>
+                            <div class="" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star" style="color: gray;"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/sl.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Soul Land</h5>
-                        <p class="card-text">Chp. 301</p>
-                        <div class="" style="color: yellow;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
+                        <a href="isi-novel.html">
+                            <h5 class="card-title">Soul Land</h5>
+                            <p class="card-text">Chp. 301</p>
+                            <div class="" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/mm.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Martial Master</h5>
-                        <p class="card-text">Chp. 166</p>
-                        <div class="" style="color: yellow;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-solid fa-star" style="color: gray;"></i>
-                        </div>
+                        <a href="isi-novel.html">
+                            <h5 class="card-title">Martial Master</h5>
+                            <p class="card-text">Chp. 166</p>
+                            <div class="" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-solid fa-star" style="color: gray;"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col my-1">
-                <div class="card" style="width: 17rem;">
+                <div class="card">
                     <img src="img/btth.jpg" class="card-img-top" style="height: 140px;" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Battle Through Heavens</h5>
-                        <p class="card-text">Chp. 187</p>
-                        <div class="" style="color: yellow;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
+                        <a href="isi-novel.html">
+                            <h5 class="card-title">Battle Through Heavens</h5>
+                            <p class="card-text">Chp. 187</p>
+                            <div class="" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
